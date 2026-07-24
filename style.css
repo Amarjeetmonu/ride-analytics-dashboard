@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.upload-section{
+    width:90%;
+    margin:25px auto;
+    text-align:center;
+}
+
+input[type=file]{
+    padding:10px;
+    background:white;
+    border-radius:8px;
+}
+
+.cards{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#444;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#2563eb;
+    font-size:30px;
+}
+
+.charts{
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+}
+
+.chart-box{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+canvas{
+    width:100% !important;
+}
+
+@media(max-width:900px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.charts{
+grid-template-columns:1fr;
+}
+
+}
+
+.tables{
+    width:90%;
+    margin:40px auto;
+}
+
+.table-box{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+select{
+
+padding:10px;
+
+margin-left:15px;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+button{
+
+padding:12px 25px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+font-size:16px;
+
+cursor:pointer;
+
+margin-left:20px;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#1d4ed8;
+
+}
+
+.search-box{
+    width:80%;
+    margin:30px auto;
+    text-align:center;
+}
+
+.search-box input{
+    width:300px;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+/* Dark Mode */
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .card{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark table{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark th{
+    background:#0d6efd;
+}
+
+.dark td{
+    border-color:#444;
+}
+
+#themeBtn{
+    position:absolute;
+    top:20px;
+    right:30px;
+
+    padding:10px 20px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#0d6efd;
+    color:white;
+
+    cursor:pointer;
+}
+
+#pdfBtn{
+    padding:12px 20px;
+    background:#16a34a;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:15px;
+}
+
+#pdfBtn:hover{
+    background:#15803d;
+}

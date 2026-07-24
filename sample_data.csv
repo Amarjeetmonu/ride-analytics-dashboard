@@ -1,0 +1,11 @@
+ride_id,driver_id,rider_id,city,fare_amount,rating,status
+1,D101,R201,New York,250,5,Completed
+2,D102,R202,Chicago,300,4,Completed
+3,D101,R203,New York,180,5,Completed
+4,D103,R204,San Francisco,450,5,Completed
+5,D104,R205,Chicago,120,3,Cancelled
+6,D102,R206,Chicago,350,4,Completed
+7,D105,R207,New York,280,5,Completed
+8,D101,R208,San Francisco,500,4,Completed
+9,D103,R209,Chicago,150,3,Completed
+10,D104,R210,New York,220,5,Completed

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ride Analytics Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- PapaParse -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+    <button id="themeBtn">🌙 Dark Mode</button>
+
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<body>
+
+    <header>
+
+        <h1>Ride Analytics Dashboard</h1>
+        <p>Analyze Ride Sharing Data</p>
+
+    </header>
+
+    <!-- Upload Section -->
+
+    <section class="upload-section">
+
+        <input
+            type="file"
+            id="csvFile"
+            accept=".csv">
+
+        <button id="downloadBtn">
+            Download Report
+        </button>
+
+        <button id="pdfBtn">Download Dashboard PDF</button>
+
+        <select id="cityFilter">
+
+            <option value="All">
+                All Cities
+            </option>
+
+        </select>
+
+    </section>
+
+    <!-- KPI Cards -->
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h2>Total Rides</h2>
+
+            <h3 id="totalRides">0</h3>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Total Revenue</h2>
+
+            <h3 id="totalRevenue">₹0</h3>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Average Rating</h2>
+
+            <h3 id="avgRating">0</h3>
+
+        </div>
+
+    </section>
+
+    <!-- Driver Search -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchDriver"
+            placeholder="Search Driver ID">
+
+    </div>
+
+    <!-- Charts -->
+
+    <section class="charts">
+
+        <div class="chart-box">
+
+            <canvas id="statusChart"></canvas>
+
+        </div>
+
+        <div class="chart-box">
+
+            <canvas id="cityChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <!-- Top Drivers -->
+
+    <section class="tables">
+
+        <div class="table-box">
+
+            <h2>Top Drivers</h2>
+
+            <table id="driverTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Driver</th>
+                        <th>Total Revenue</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- Revenue By City -->
+
+    <section class="tables">
+
+        <div class="table-box">
+
+            <h2>Revenue by City</h2>
+
+            <table id="cityRevenueTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>City</th>
+                        <th>Total Revenue</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer>
+Ride Analytics Dashboard | Built using HTML, CSS, JavaScript, PapaParse & Chart.js
+</footer>
+
+</html>
