@@ -31,4 +31,4 @@ An interactive Ride Analytics Dashboard built using HTML, CSS, and JavaScript.
 4. Explore the dashboard.
 
 ## Author
-Amarjeet Kumar<img 
+Amarjeet Kumar
